@@ -5,7 +5,7 @@ function CartItem() {
     return (
         <div className="CartItem">
             <div className="CartItem-image">
-                <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_GEO_AU_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553706422"></img>
+                <img src="https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/DIPP12WSG2_.jpg"></img>
             </div>
             <div className="CartItem-info">
                 <div className="info-title">
@@ -16,8 +16,13 @@ function CartItem() {
                 </div>
                 <div className="item-actions">
                     <div className="item-quantity">
-
+                        <select>
+                            <option value="1">Qty: 1</option>
+                            <option value="2">Qty: 2</option>
+                            <option value="3">Qty: 3</option>
+                        </select>
                     </div>
+                    <div className="item-actions-divider">|</div>
                     <div className="item-delete">
                         Delete
                     </div>
