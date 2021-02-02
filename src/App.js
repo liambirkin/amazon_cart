@@ -1,5 +1,4 @@
 import React, { useState }from 'react'
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import CartItems from './components/CartItems';
@@ -14,7 +13,7 @@ function App() {
     <div className="App">
       <Header title="Amazon Cart"/>
       <div className="App-main">
-        <CartItems items={cartItems}  />
+        <CartItems items={cartItems} setCartItems={setCartItems} />
         <CartTotal items={cartItems} />
       </div>
     </div>
