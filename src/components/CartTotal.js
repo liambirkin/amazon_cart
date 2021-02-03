@@ -5,7 +5,7 @@ import NumberFormat from 'react-number-format';
 
 function CartTotal({ items }) {
 
-    const getTotalPrice = () => {
+    const getTotalPrice = () => { 
         let total = 0;
         items.forEach((item)=>{
             total += (item.price * item.quantity)
@@ -16,7 +16,7 @@ function CartTotal({ items }) {
     const getTotalItems = () => {
         let totalItems = 0;
         items.forEach((item)=>{
-            totalItems += (item.quantity)
+            totalItems += (item.quantity * 1)
         })
         return totalItems;
     }
